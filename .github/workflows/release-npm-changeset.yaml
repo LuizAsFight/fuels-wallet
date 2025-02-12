@@ -26,7 +26,7 @@ jobs:
         with:
           fetch-depth: 0
       - id: check-commit
-        name: Check if commit is a regular merge or a changeset PR merge
+        name: Check if this commit is a regular merge or a changeset PR merge
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
